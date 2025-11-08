@@ -1,0 +1,648 @@
+#btn-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 900px) {
+  .btn-cta {
+    display: none;
+  }
+
+  #btn-menu {
+    display: block;
+    position: relative;
+    z-index: 1001;
+     
+  }
+
+
+  /* ======= MENU LATERAL DIREITO ======= */
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #000000;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.15);
+    transition: right 0.4s ease;
+    padding-top: 80px;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .nav-list a {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+
+  .nav-list a:hover {
+    color: #ff7300;
+  }
+  /* .btn-cta {
+    display: none;
+  }
+
+  #btn-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-list.active {
+    display: block;
+  } */
+
+  /* contatos lado a lado mesmo no celular */
+  .info-contato {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .item-contato {
+    min-width: 150px;
+  }
+
+  .texto-contato h4 {
+    font-size: 12px;
+  }
+
+  .texto-contato p {
+    font-size: 11px;
+  }
+
+  .icon-circulo {
+    padding: 5px;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .redes-sociais {
+    gap: 8px;
+  }
+
+  .redes-sociais img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container2 img {
+    width: 85px;
+  }
+
+  .texto-contato h4 {
+    font-size: 11px;
+  }
+
+  .texto-contato p {
+    font-size: 10px;
+  }
+}
+
+/* responsive - serviços */
+/* Responsividade */
+@media (max-width: 900px) {
+  .cards-servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-servicos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* contador  */
+@media (max-width: 768px) {
+
+   #btn-menu {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #000;
+    transition: right 0.4s ease;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .resultados {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.footer-section {
+  max-width: 250px;
+}
+
+.footer-section h3 {
+  color: #ff7300;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.footer-section p {
+  margin: 6px 0;
+  line-height: 1.5;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.redes-soc h3 {
+  margin-top: 15px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  padding: 15px;
+  background-color: #000;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* ===== MENU HAMBÚRGUER ===== */
+.nav-social {
+  display: flex;
+  gap: 20px;
+  transition: all 0.4s ease; 
+}
+
+#btn-menu {
+  display: none;
+  color: #e65c00;
+  font-size: 1.5rem;
+ background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 900px) {
+  .container-section,
+  .content-section2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* #btn-menu {
+    display: block;
+  }
+
+  .nav-social {
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+  }
+
+  
+  .nav-social.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .nav-social.active {
+    display: flex;
+  } */
+
+  /* .nav-social ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-orcamento {
+    display: none;
+  } */
+}
+
+@media (max-width: 600px) {
+  .conteudo h1 {
+    font-size: 1.7rem;
+  }
+  .conteudo p {
+    font-size: 1rem;
+  }
+}
+
+
+.info-contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #000000;
+  color: white;
+  padding: 15px 10px;
+   gap: 22px;
+  border-top: 1px solid #ddd;
+}
+
+.item-contato {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex: 1;
+  min-width: 220px;
+  justify-content: center;
+}
+
+.icon-circulo {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.texto-contato h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.texto-contato p {
+  font-size: 13px;
+  color: #f3f3f3;
+}
+
+/* ======= REDES SOCIAIS ======= */
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.redes-sociais img {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s;
+}
+
+.redes-sociais img:hover {
+  transform: scale(1.1);
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 900px) {
+  /* .btn-cta {
+    display: none;
+  }
+
+  #btn-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+  } */
+
+  /* .nav-list ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-list.active {
+    display: block;
+  } */
+
+  /* contatos lado a lado mesmo no celular */
+  .info-contato {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .item-contato {
+    min-width: 150px;
+  }
+
+  .texto-contato h4 {
+    font-size: 12px;
+  }
+
+  .texto-contato p {
+    font-size: 11px;
+  }
+
+  .icon-circulo {
+    padding: 5px;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .redes-sociais {
+    gap: 8px;
+  }
+
+  .redes-sociais img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container2 img {
+    width: 85px;
+  }
+
+  .texto-contato h4 {
+    font-size: 11px;
+  }
+
+  .texto-contato p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-bg .conteudo > h1 {
+    font-size: 1.4rem;
+  }
+
+  .section-sobre {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+  }
+
+  .sobre-nos {
+    width: 100%;
+    margin: 0 auto;   /* Centraliza horizontalmente */
+  }
+
+  .sobre-nos {
+    margin: 30px;
+  }
+
+  .sobre-nos > p {
+    width: 310px;
+    padding-top: 15px;
+  }
+
+  .section-sobre p {
+    text-align: justify; /* Deixa o texto alinhado bonito */
+    margin: 0 auto;
+  }
+
+  .section-sobre h2,
+  .section-sobre h3 {
+    text-align: center;
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+  
+}
+
+
+/* página fachada */
+@media (max-width: 900px) {
+  .container-section1,
+  .content-section1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img1 img {
+    max-width: 100%;
+  }
+
+  .section-main p,
+  .section-main1 p {
+    width: 100%;
+  }
+
+  .conteudo2 h1 {
+    font-size: 2rem;
+  }
+
+  .grid-fachada {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* imperbilização */
+@media (max-width: 900px) {
+  .grid-servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-servicos {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .section-main > p {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  .img1 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 8px;
+  }
+
+  /* dreno */
+  .content-section5 img,
+.kk-img img {
+  width: 500px;      /* tamanho fixo no computador */
+  height: auto;      /* mantém proporção */
+  display: block;    /* evita espaços em branco */
+  margin: 0 auto;    /* centraliza */
+  border-radius: 8px; /* opcional, deixa mais bonito */
+}
+
+/* --- Responsividade: celular e tablet --- */
+@media (max-width: 768px) {
+   .content-section5 {
+    flex-direction: column; 
+    align-items: center;
+  } 
+
+  .content-section5 img,
+  .kk-img img {
+    width: 100%;       /* ocupa toda a largura disponível */
+    max-width: 100%;   /* não ultrapassa o container */
+  }
+
+  .section-main5, 
+  .img, 
+  .kk-img {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  #btn-menu {
+    display: block;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #000;
+    box-shadow: -4px 0 8px rgba(0,0,0,0.15);
+    transition: right 0.4s ease;
+    padding-top: 80px;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .nav-list a {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+
+  .nav-list a:hover {
+    color: #ff7300;
+  }
+}
+
