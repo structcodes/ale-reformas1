@@ -483,9 +483,10 @@
     margin: 30px;
   }
 
-  .sobre-nos {
-    width: 100%;
+  .sobre-nos > p {
+    width: 70%;
     margin: 0 auto;   /* Centraliza horizontalmente */
+    text-align: center;
   }
 
   .sobre-nos {
@@ -507,7 +508,7 @@
     text-align: center;
   }
 
-  .img img {
+  .img > img {
     width: 100%;
   }
 

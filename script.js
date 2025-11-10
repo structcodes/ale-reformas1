@@ -1,3 +1,23 @@
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+
+  if (question) { // <-- importante para evitar erro se a classe não existir
+    question.addEventListener("click", () => {
+      item.classList.toggle("active");
+
+      // Fecha todos os outros
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) otherItem.classList.remove("active");
+      });
+    });
+  }
+});
+
+
+
+
 // Seleciona o botão e o menu
 const btnMenu = document.getElementById('btn-menu');
 const navList = document.querySelector('.nav-list');
@@ -40,6 +60,7 @@ const counters = document.querySelectorAll('.contador');
     updateCount(); // inicia o contador
   });
 
+
   // slider 
   let slideIndex = 0;
 const slides = document.querySelectorAll(".slides img");
@@ -65,18 +86,7 @@ setInterval(() => {
 }, 5000);
   
 
-  // faq
-  const faqItems = document.querySelectorAll(".faq-item");
 
-  faqItems.forEach(item => {
-    const question = item.querySelector(".faq-question");
-    question.addEventListener("click", () => {
-      item.classList.toggle("active");
-      faqItems.forEach(otherItem => {
-        if (otherItem !== item) otherItem.classList.remove("active");
-      });
-    });
-  });
 
 
  
