@@ -577,26 +577,28 @@
   }
 
   /* dreno */
-  .content-section5 img,
+.content-section5 img,
 .kk-img img {
-  width: 500px;      /* tamanho fixo no computador */
-  height: auto;      /* mantém proporção */
-  display: block;    /* evita espaços em branco */
-  margin: 0 auto;    /* centraliza */
-  border-radius: 8px; /* opcional, deixa mais bonito */
-}
+  width: 500px;      
+  height: auto;      
+  display: block;    
+  margin: 0 auto;    
+  border-radius: 8px; 
+ 
+} 
+
 
 /* --- Responsividade: celular e tablet --- */
 @media (max-width: 768px) {
-   .content-section5 {
+    .content-section5 {
     flex-direction: column; 
     align-items: center;
   } 
 
   .content-section5 img,
   .kk-img img {
-    width: 100%;       /* ocupa toda a largura disponível */
-    max-width: 100%;   /* não ultrapassa o container */
+    width: 100%;       
+    max-width: 100%;   
   }
 
   .section-main5, 
@@ -604,7 +606,9 @@
   .kk-img {
     width: 100%;
     text-align: center;
-  }
+  } 
+
+  
 }
 
 @media (max-width: 900px) {
