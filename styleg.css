@@ -353,10 +353,11 @@ header {
   margin-bottom: 15px;
 }
 
-.content button {
-  background: white;
+.content .cards-cta {
+  background: white; 
   color: black;
   border: none;
+  text-decoration: none;
   padding: 8px 18px;
   border-radius: 30px;
   cursor: pointer;
@@ -364,8 +365,8 @@ header {
   transition: 0.3s;
 }
 
-.content button:hover {
-  background: #ff7300;
+.content .cards-cta:hover {
+   background: #ff7300;
   color: white;
 }
 
