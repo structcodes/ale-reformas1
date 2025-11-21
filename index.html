@@ -1,420 +1,518 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="styleg.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-  <title>ALE Reforma & Manutenções</title>
-</head>
-<body>
-  <header>
-  <div class="container">
-    <div class="container2">
-      <img width="110" src="assets/images/logo-oring.png" alt="Logo da empresa">
-      <nav class="nav-list">
-        <ul>
-          <li> <a href="#inicio">Inicio</a> </li>
-          <li> <a href="#sobre-nos">Sobre nós</a> </li>
-          <li> <a href="#contato">Contato</a> </li>
-          <li> <a href="#diferencial">Diferencial</a></li>
-        </ul>
-      </nav>
-      <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es"><button class="btn-cta">Solicitar orçamento</button></a>
-      <button id="btn-menu">&#9776</button>
-    </div>
-  </div>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ALE Reformas & Manutenções: referência há mais de 10 anos em reformas, restauração de fachadas, pintura, impermeabilização e manutenção no Rio de Janeiro. Qualidade, segurança e profissionalismo em cada projeto." />
+    <meta name="keywords" content="reformas, manutenção, fachadas, pintura, impermeabilização, Rio de Janeiro, ALE Reformas" />
+    <meta name="author" content="ALE Reformas & Manutenções" />
+    <meta name="robots" content="index, follow" />
 
-  
-    <div class="info-contato">
-    <div class="item-contato">
-      <div class="icon-circulo">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ff7300"><path d="M480-80Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880h20q10 0 20 2v81q-10-2-19.5-2.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186q122-112 181-203.5T720-552v-8h80v8q0 100-79.5 217.5T480-80Zm0-400q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Z"/></svg>
-      </div>
-      <div class="texto-contato">
-        <h4>LOCALIZAÇÃO</h4>
-        <p>Rio de Janeiro</p>
-      </div>
-    </div>
+    <!-- Canonical -->
+    <link rel="canonical" href="https://alereformasemanutencoes.com/" />
 
-    <div class="item-contato">
-      <div class="icon-circulo">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ff7300"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200Z"/></svg>
-      </div>
-      <div class="texto-contato">
-        <h4>E-MAIL</h4>
-        <p>alemontagemtubular@gmail.com</p>
-      </div>
-    </div>
+    <!-- Open Graph / Facebook / Social -->
+    <meta property="og:title" content="ALE Reformas & Manutenções" />
+    <meta property="og:description" content="Referência há mais de 10 anos em reformas e manutenção de fachadas residenciais e prediais no Rio de Janeiro. Qualidade, segurança e durabilidade." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alereformasemanutencoes.com/" />
+    <meta property="og:image" content="https://alereformasemanutencoes.com/assets/images/logo-oring.png" />
+    <meta property="og:site_name" content="ALE Reformas & Manutenções" />
 
-    <div class="item-contato">
-      <div class="icon-circulo">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ff7300"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"/></svg>
-      </div>
-      <div class="texto-contato">
-        <h4>TELEFONE</h4>
-        <p>(21) 97932-8219</p>
-      </div>
-    </div>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <div class="redes-sociais">
-    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+    <link rel="stylesheet" href="styleg.css" />
+    <link rel="stylesheet" href="responsive.css" />
 
-    <a href="https://www.instagram.com/alereformasemanutecoes?igsh=ZXB5MTczMDVoM3R1"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
 
-    <a href="alemontagemtubular@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail"></a>
+    <title>ALE Reforma & Manutenções</title>
+  </head>
 
-    <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
-  </div>
-
-  </div>
- </header>
-
- <main>
-   <div class="video-bg" >
-    <video autoplay muted loop>
-      <source src="assets/video/video.mp4" type="video/mp4">
-    </video>
-
-    <div class="overlay"></div>
-
-    <div class="conteudo">
-      <p>REFORMAS & MANUTENÇÕES</p>
-      <h1>Referência há mais de 5 anos <br> em reformas e manutenção de fachadas.</h1>
-      <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es"><button>Faça seu orçamento</button></a>
-    </div>
-  </div>
-
-  <section class="cards">
-    <div class="card">
-      <div class="overlay2"></div>
-      <img src="assets/images/flex1.jpg" alt="profissional">
-      <div class="content">
-        <h3>projetos de reforma</h3>
-        <h2>Profissionais</h2>
-        <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="cards-cta">
-          SAIBA MAIS
-        </a>
+  <body>
+    <header>
+      <div class="container">
+        <div class="container2">
+          <img width="110" src="assets/images/logo-oring.png" alt="Logo da empresa" />
+          <nav class="nav-list">
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#sobre-nos">Sobre nós</a></li>
+              <li><a href="#contato">Contato</a></li>
+              <li><a href="#diferencial">Diferencial</a></li>
+            </ul>
+          </nav>
+          <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es">
+            <button class="btn-cta">Solicitar orçamento</button>
+          </a>
+          <button id="btn-menu">&#9776</button>
         </div>
       </div>
 
-   <div class="card">
-    <div class="overlay2"></div>
-    <img src="assets/images/flex2.jpg" alt="Equipe qualificada">
-    <div class="content">
-      <h3>EQUIPE QUALIFICADA</h3>
-      <h2>EM CADA ETAPA DA SUA OBRA</h2>
-      <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="cards-cta">
-        SAIBA MAIS
-      </a>
-    </div>
-  </div>
+      <div class="info-contato">
+        <div class="item-contato">
+          <div class="icon-circulo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ff7300">
+              <path d="M480-80Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880h20q10 0 20 2v81q-10-2-19.5-2.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186q122-112 181-203.5T720-552v-8h80v8q0 100-79.5 217.5T480-80Zm0-400q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Z"/>
+            </svg>
+          </div>
+          <div class="texto-contato">
+            <h4>LOCALIZAÇÃO</h4>
+            <p>Rio de Janeiro</p>
+          </div>
+        </div>
 
-  <div class="card">
-    <div class="overlay2"></div>
-    <img src="assets/images/flex3.jpg" alt="Controle total">
-    <div class="content">
-      <h3>CONTROLE TOTAL</h3>
-      <h2>PRAZOS E GASTOS</h2>
-     <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="cards-cta">
-      SAIBA MAIS
-     </a>
-    </div>
-  </div>
-</section>
+        <div class="item-contato">
+          <div class="icon-circulo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ff7300">
+              <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200Z"/>
+            </svg>
+          </div>
+          <div class="texto-contato">
+            <h4>E-MAIL</h4>
+            <p>Alereformasemanutencoes@gmail.com</p>
+          </div>
+        </div>
 
-<section>
-  <div class="section-sobre" id="sobre-nos">
-    <div class="sobre-nos">
-      <h2 class="h21">Sobre nós</h2>
-      <h2>Nossa trajetória</h2>
-      <p>Com mais de 5 anos de experiência no mercado, a ALE Reformas e Manutenções é referência em reformas e manutenção de fachadas prediais, residências e apartamentos no Rio de Janeiro.
-      Nossa trajetória é marcada por dedicação, qualidade e compromisso, sempre buscando superar as expectativas dos nossos clientes. <br> <br>
-      
-      Contamos com uma equipe altamente qualificada, preparada para atuar em todas as etapas da obra desde o planejamento até os últimos detalhes do acabamento. Nosso objetivo é oferecer soluções completas e eficientes, com foco em segurança, durabilidade e estética. <br> <br>
+        <div class="item-contato">
+          <div class="icon-circulo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ff7300">
+              <path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"/>
+            </svg>
+          </div>
+          <div class="texto-contato">
+            <h4>TELEFONE</h4>
+            <p>(21) 97932-8219</p>
+          </div>
+        </div>
 
-      Além disso, mantemos parcerias com fornecedores e empresas especializadas, o que nos permite utilizar materiais de alta performance e acompanhar as tendências mais recentes do setor. Essa combinação de experiência, atualização constante e profissionalismo faz da ALE Reformas e Manutenções uma empresa em constante crescimento, reconhecida pela excelência em cada projeto entregue.
-      </p>
+        <div class="redes-sociais">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+          <a href="https://www.instagram.com/alereformasemanutecoes?igsh=ZXB5MTczMDVoM3R1"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+          <a href="mailto:Alereformasemanutencoes@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail" /></a>
+          <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" /></a>
+        </div>
       </div>
-      <div class="img">
-        <img width="500" src="assets/images/pintura-oring.jpeg" alt="dreno">
+    </header>
+
+    <main>
+      <div class="video-bg">
+        <video autoplay muted loop>
+          <source src="assets/video/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="conteudo">
+          <p>REFORMAS & MANUTENÇÕES</p>
+          <h1>
+            Referência há mais de 10 anos <br />
+            em reformas e manutenção de fachadas.
+          </h1>
+          <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es">
+            <button>Faça seu orçamento</button>
+          </a>
+        </div>
       </div>
-    </div>
-</section>
 
+      <section class="cards">
+        <div class="card">
+          <div class="overlay2"></div>
+          <img src="assets/images/flex1.jpg" alt="profissional" />
+          <div class="content">
+            <h3>projetos de reforma</h3>
+            <h2>Profissionais</h2>
+            <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="cards-cta">
+              SAIBA MAIS
+            </a>
+          </div>
+        </div>
 
-<section class="diferenciais" id="diferencial">
-  <h3>O QUE NOS DESTACA NO MERCADO</h3>
-  <h2>Nosso Diferencial</h2>
+        <div class="card">
+          <div class="overlay2"></div>
+          <img src="assets/images/flex2.jpg" alt="Equipe qualificada" />
+          <div class="content">
+            <h3>EQUIPE QUALIFICADA</h3>
+            <h2>EM CADA ETAPA DA SUA OBRA</h2>
+            <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="cards-cta">
+              SAIBA MAIS
+            </a>
+          </div>
+        </div>
 
-  <div class="cards">
-    <div class="card">
-      <img src="https://img.icons8.com/?size=100&id=x5KpeD4aKBgD&format=png&color=000000" alt="Ícone orçamento">
-      <h4>ORÇAMENTO</h4>
-      <p>Trabalhamos com uma tabela de preços detalhada, garantindo valores justos e padronizados em qualquer região do Rio de Janeiro. Assim, você tem segurança de um orçamento claro, sem surpresas.</p>
-    </div>
+        <div class="card">
+          <div class="overlay2"></div>
+          <img src="assets/images/flex3.jpg" alt="Controle total" />
+          <div class="content">
+            <h3>CONTROLE TOTAL</h3>
+            <h2>PRAZOS E GASTOS</h2>
+            <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="cards-cta">
+              SAIBA MAIS
+            </a>
+          </div>
+        </div>
+      </section>
 
-    <div class="card">
-      <img src="https://img.icons8.com/?size=100&id=58778&format=png&color=000000" alt="Ícone acompanhamento">
-      <h4>ACOMPANHAMENTO</h4>
-      <p>Trabalhamos com uma tabela de preços detalhada, garantindo valores justos e padronizados em qualquer região do Rio de Janeiro. Assim, você tem a segurança de um orçamento claro, sem surpresas.</p>
-    </div>
+      <section>
+        <div class="section-sobre" id="sobre-nos">
+          <div class="sobre-nos">
+            <h2 class="h21">Sobre nós</h2>
+            <h2>Nossa trajetória</h2>
+            <p>
+              Com mais de 10 anos de experiência no mercado, a ALE Reformas e
+              Manutenções é referência em reformas e manutenção de fachadas
+              prediais, residências e apartamentos no Rio de Janeiro. Nossa
+              trajetória é marcada por dedicação, qualidade e compromisso,
+              sempre buscando superar as expectativas dos nossos clientes.
+              <br /><br />
 
-    <div class="card">
-      <img src="https://img.icons8.com/?size=100&id=11741&format=png&color=000000" alt="Ícone monitoramento">
-      <h4>MONITORAMENTO</h4>
-      <p>Está longe do seu imóvel? Oferecemos monitoramento por câmeras totalmente gratuito, para que você possa acompanhar sua obra em tempo real, de onde estiver, com segurança e transparência.</p>
-    </div>
+              Contamos com uma equipe altamente qualificada, preparada para
+              atuar em todas as etapas da obra desde o planejamento até os
+              últimos detalhes do acabamento. Nosso objetivo é oferecer
+              soluções completas e eficientes, com foco em segurança, durabilidade
+              e estética. <br /><br />
 
-    <div class="card">
-      <img src="https://img.icons8.com/?size=100&id=11227&format=png&color=000000" alt="Ícone atendimento">
-      <h4>ATENDIMENTO</h4>
-      <p>Pare de falar com chatbots e enfrentar o temido atendimento. Fazemos na amizade: você conversa diretamente com o responsável do início ao fim da obra. Aqui, você fala com quem entende e resolve de verdade.</p>
-    </div>
-  </div>
-</section>
+              Além disso, mantemos parcerias com fornecedores e empresas
+              especializadas, o que nos permite utilizar materiais de alta
+              performance e acompanhar as tendências mais recentes do setor.
+              Essa combinação de experiência, atualização constante e
+              profissionalismo faz da ALE Reformas e Manutenções uma empresa
+              em constante crescimento, reconhecida pela excelência em cada
+              projeto entregue.
+            </p>
+          </div>
+          <div class="img">
+            <img width="500" src="assets/images/pintura-oring.jpeg" alt="dreno" />
+          </div>
+        </div>
+      </section>
 
-<section class="servicos-especializados" data-aos="fade-up">
-  <h2>SERVIÇOS ESPECIALIZADOS</h2>
+      <section class="diferenciais" id="diferencial">
+        <h3>O QUE NOS DESTACA NO MERCADO</h3>
+        <h2>Nosso Diferencial</h2>
 
-  <div class="cards-servicos">
-    <div class="card-servico" id="servicos">
-      <div class="icone">
-        <img src="https://img.icons8.com/?size=100&id=spl5LGXl6B0E&format=png&color=000000" alt="Fachada">
-        
+        <div class="cards">
+          <div class="card">
+            <img src="https://img.icons8.com/?size=100&id=x5KpeD4aKBgD&format=png&color=000000" alt="Ícone orçamento" />
+            <h4>ORÇAMENTO</h4>
+            <p>
+              Trabalhamos com uma tabela de preços detalhada, garantindo valores justos
+              e padronizados em qualquer região do Rio de Janeiro. Assim, você tem
+              segurança de um orçamento claro, sem surpresas.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="https://img.icons8.com/?size=100&id=58778&format=png&color=000000" alt="Ícone acompanhamento" />
+            <h4>ACOMPANHAMENTO</h4>
+            <p>
+              Trabalhamos com uma tabela de preços detalhada, garantindo valores justos
+              e padronizados em qualquer região do Rio de Janeiro. Assim, você tem a
+              segurança de um orçamento claro, sem surpresas.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="https://img.icons8.com/?size=100&id=11741&format=png&color=000000" alt="Ícone monitoramento" />
+            <h4>MONITORAMENTO</h4>
+            <p>
+              Está longe do seu imóvel? Oferecemos monitoramento por câmeras totalmente
+              gratuito, para que você possa acompanhar sua obra em tempo real, de onde
+              estiver, com segurança e transparência.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="https://img.icons8.com/?size=100&id=11227&format=png&color=000000" alt="Ícone atendimento" />
+            <h4>ATENDIMENTO</h4>
+            <p>
+              Pare de falar com chatbots e enfrentar o temido atendimento. Fazemos na
+              amizade: você conversa diretamente com o responsável do início ao fim da
+              obra. Aqui, você fala com quem entende e resolve de verdade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="servicos-especializados" data-aos="fade-up">
+        <h2>SERVIÇOS ESPECIALIZADOS</h2>
+
+        <div class="cards-servicos">
+          <div class="card-servico" id="servicos">
+            <div class="icone">
+              <img src="https://img.icons8.com/?size=100&id=spl5LGXl6B0E&format=png&color=000000" alt="Fachada" />
+            </div>
+            <h3>Restauração de Fachadas</h3>
+            <p>
+              ALE Reformas e Manutenções especializada em restauração de fachadas e
+              pastilhas. Com mais de 10 anos de experiência no mercado, realizamos
+              projetos de alto padrão com foco em qualidade, segurança e acabamento
+              impecável
+            </p>
+            <a href="fachada.html" class="btn-vermais" target="_blank">VER MAIS</a>
+          </div>
+
+          <div class="card-servico">
+            <div class="icone">
+              <img src="https://img.icons8.com/?size=100&id=ESaKxzIHmU81&format=png&color=000000" alt="Pintura" />
+            </div>
+            <h3>Pintura</h3>
+            <p>
+              Especialistas em pintura de fachadas prediais, trabalhamos com profissionais
+              qualificados e equipamentos seguros, garantindo qualidade, durabilidade e
+              excelência em cada projeto.
+            </p>
+            <a href="pintura.html" class="btn-vermais" target="_blank">VER MAIS</a>
+          </div>
+
+          <div class="card-servico">
+            <div class="icone">
+              <img src="https://img.icons8.com/?size=100&id=44463&format=png&color=000000" alt="Impermeabilização" />
+            </div>
+            <h3>Impermeabilização</h3>
+            <p>
+              Somos especializados em impermeabilização de lajes, caixas d’água, cisternas e telhados,
+              oferecendo proteção completa contra infiltrações e umidade. Utilizamos materiais de alta
+              performance e técnicas modernas, garantindo a segurança estrutural e a longevidade do seu imóvel.
+            </p>
+            <a href="impermeabilizacao.html" class="btn-vermais" target="_blank">VER MAIS</a>
+          </div>
+
+          <div class="card-servico">
+            <div class="icone">
+              <img src="https://img.icons8.com/?size=100&id=LERfX5TZI0qa&format=png&color=000000" alt="Dreno" />
+            </div>
+            <h3>Dreno para ar-condicionado em fachadas</h3>
+            <p>
+              Realizamos a instalação de drenos de ar-condicionado com eficiência e segurança, garantindo o escoamento adequado da água e evitando infiltrações, manchas e danos estruturais. Esse serviço assegura uma fachada protegida, funcional e valorizada, preservando a estética e a durabilidade do seu imóvel.
+            </p>
+            <a href="dreno.html" class="btn-vermais" target="_blank">VER MAIS</a>
+          </div>
+
+          <div class="card-servico">
+            <div class="icone">
+              <img src="https://img.icons8.com/?size=100&id=w3o_i2Kkg9zG&format=png&color=000000" alt="Limpeza" />
+            </div>
+            <h3>Limpeza</h3>
+            <p>
+              Realizamos limpeza de fachadas em ACM, telhados, pele de vidro, pastilhas e revestimentos, além de retirada de trincas, emboço estufado e pintura de acabamento. Utilizamos equipamentos adequados e produtos específicos para cada tipo de superfície, garantindo segurança, agilidade e resultado duradouro.
+            </p>
+            <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="btn-vermais">VER MAIS</a>
+          </div>
+
+          <div class="card-servico">
+            <div class="icone">
+              <img src="https://img.icons8.com/?size=100&id=gxEMvOe3pGuT&format=png&color=000000" alt="Laudo" />
+            </div>
+            <h3>Laudo</h3>
+            <p>
+              Realizamos o teste de percussão com laudo 3D para identificar, com máxima precisão, descolamentos, fissuras e falhas em revestimentos. Esse processo garante segurança, confiabilidade e eficiência em cada AVALIAÇÃO.
+            </p>
+            <a href="laudo.html" class="btn-vermais" target="_blank" rel="noopener noreferrer">VER MAIS</a>
+          </div>
+
+          <div class="card-servico">
+            <div class="icone">
+              <img src="https://img.icons8.com/?size=100&id=5ILoCXjKiXDV&format=png&color=000000" alt="Laudo" />
+            </div>
+            <h3>Montagem e Desmontagem de Apara-Lixo</h3>
+            <p>
+              Realizamos serviços de montagem e desmontagem de apara-lixo com segurança, agilidade e eficiência. Contamos com uma equipe técnica qualificada que garante execução precisa e cumprimento de prazos. Nossos serviços asseguram praticidade, organização e durabilidade nas estruturas instaladas.
+            </p>
+            <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="btn-vermais" target="_blank" rel="noopener noreferrer">VER MAIS</a>
+          </div>
+
+          <div class="card-servico">
+            <div class="icone">
+              <img src="https://img.icons8.com/?size=100&id=922&format=png&color=000000" alt="Laudo" />
+            </div>
+            <h3>Rebaixamento de Gesso e Drywall</h3>
+            <p>
+              Realizamos serviços de rebaixamento de gesso e drywall com foco em qualidade, segurança e acabamento impecável. Desenvolvemos projetos de alto padrão para valorizar e modernizar ambientes. Nossa equipe técnica qualificada garante resultados duradouros e um visual sofisticado em cada detalhe.
+            </p>
+            <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="btn-vermais" target="_blank" rel="noopener noreferrer">VER MAIS</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="resultados">
+        <div class="resultado">
+          <img src="https://img.icons8.com/?size=50&id=33792&format=png&color=FF8200" alt="" />
+          <h3 class="contador" data-target="500">0</h3>
+          <p>Reformas realizadas</p>
+        </div>
+
+        <div class="resultado">
+          <img src="https://img.icons8.com/?size=50&id=50899&format=png&color=FF8200" alt="Clientes" />
+          <h3 class="contador" data-target="500">0</h3>
+          <p>Clientes satisfeitos</p>
+        </div>
+
+        <div class="resultado">
+          <img src="https://img.icons8.com/?size=50&id=hWDZYd6Hwtr8&format=png&color=FF8200" alt="worker-male" />
+          <h3 class="contador" data-target="10">0</h3>
+          <p>Anos de experiência</p>
+        </div>
+      </section>
+
+      <section class="faq">
+        <h2>Perguntas frequentes</h2>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">Quais são as garantias que a empresa fornece?</button>
+            <div class="faq-answer">
+              <p>
+                Para todos os serviços que oferecemos emitimos nota fiscal e, para
+                serviços específicos, também emitimos Termo de Responsabilidade Técnica
+                e Especificação Técnica.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Quais são os prazos médios para a conclusão de projetos de reforma de fachada?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Os prazos variam, mas geralmente concluímos projetos de reforma de fachadas
+                em 3 a 6 messes.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Vocês possuem equipe própria de profissionais especializados em trabalhos de fachada?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim, contamos com uma equipe própria de profissionais altamente qualificados em trabalhos
+                de fachada. Habilitados para trabalho em altura.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Como solicitar um orçamento?</button>
+            <div class="faq-answer">
+              <p>
+                Entre em contato conosco através de uma das formas abaixo, enviando o máximo de informações
+                possíveis. Caso tenha fotos que auxiliem a identificar o tipo de serviço, envie-nos também.Telefone E-mail
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Vocês atendem residências, prédios e comércios?</button>
+            <div class="faq-answer">
+              <p>
+                Sim! Prestamos serviços para casas, apartamentos, prédios, comércios e condomínios.
+                Conte com a ALE Reformas e Manutenções para garantir qualidade e segurança em cada projeto.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Vocês seguem todas as normas de segurança e regulamentações em suas reformas?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim! Nossa equipe está totalmente familiarizada com regulamentações locais e normas de
+                segurança, garantindo que cada projeto seja executado com eficiência, qualidade e conformidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="servicos2">
+        <h2>Serviços Realizados</h2>
+        <div class="slider">
+          <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+          <div class="slides">
+            <img src="assets/images/pintura.png" alt="Serviço 1" class="active" />
+            <img src="assets/images/andaime2.png" alt="Serviço 2" />
+            <img src="assets/images/andaime.png" alt="Serviço 3" />
+            <img src="assets/images/ape-pintura.jpg" alt="Serviço 4" />
+            <img src="assets/images/lateral.jpg" alt="lateral" />
+            <img src="assets/images/predio-blue.jpg" alt="predio" />
+            <img src="assets/images/predio1.jpg" alt="predio" />
+            <img src="assets/images/pintura-oring.jpeg" alt="pintura" />
+            <img src="assets/images/predio3.jpg" alt="predio" />
+            <img src="assets/images/imper-oring.jpeg" alt="img" />
+            <img src="assets/images/fachada-oring.jpeg" alt="Fachada" />
+          </div>
+          <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container" id="contato">
+        <div class="footer-section">
+          <h3>ALE Reformas & Manutenções</h3>
+          <p>
+            A ALE Reforma & Manutenções® é uma empresa <br />
+            que atua no segmento da Construção.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>Rio de Janeiro, Brasil</p>
+          <p>Telefone: +55 (21) 97932-8219</p>
+          <p>Gmail: Alereformasemanutencoes@gmail.com</p>
+          <p>Instagram: alereformasemanutencoes</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Top Serviços</h3>
+          <p>Reformas</p>
+          <p>Pintura</p>
+          <p>Elétrica</p>
+          <p>Hidráulica</p>
+          <p>Projetos</p>
+          <p>Faz Tudo</p>
+          <p>Limpeza</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Atendimento</h3>
+          <p>Confira nossos horários de atendimento:</p>
+          <p>Segunda a Sexta: das 8h às 17h</p>
+
+          <div class="footer-section redes-soc">
+            <h3>Nossas redes sociais</h3>
+            <div class="icons">
+              <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/logo-whats.png" alt="WhatsApp" />
+              </a>
+              <a href="https://www.instagram.com/alereformasemanutecoes?igsh=ZXB5MTczMDVoM3R1" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/logo-insta.png" alt="Instagram" />
+              </a>
+              <a href="mailto:Alereformasemanutencoes@gmail.com">
+                <img src="assets/images/logo-gmail.png" alt="E-mail" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <h3>Restauração de Fachadas</h3>
-      <p>ALE Reformas e Manutenções  especializada em restauração de fachadas e pastilhas.
-      Com mais de 10 anos de experiência no mercado, realizamos projetos de alto padrão com foco em qualidade, segurança e acabamento impecável</p>
-      <a href="fachada.html" class="btn-vermais" target="_blank">VER MAIS</a>
-    </div>
 
-    <div class="card-servico">
-      <div class="icone">
-        <img src="https://img.icons8.com/?size=100&id=ESaKxzIHmU81&format=png&color=000000" alt="Pintura">
+      <div class="footer-bottom">
+        <p>© 2025 ALE Reformas & Manutenções. Todos os direitos reservados.</p>
       </div>
-      <h3>Pintura</h3>
-      <p>Especialistas em pintura de fachadas prediais, trabalhamos com profissionais qualificados e equipamentos seguros, garantindo qualidade, durabilidade e excelência em cada projeto.</p>
-      <a href="pintura.html" class="btn-vermais" target="_blank">VER MAIS</a>
-    </div>
+    </footer>
 
-    <div class="card-servico">
-      <div class="icone">
-        <img src="https://img.icons8.com/?size=100&id=44463&format=png&color=000000" alt="Impermeabilização">
-      </div>
-      <h3>Impermeabilização</h3>
-      <p>Somos especializados em impermeabilização de lajes, caixas d’água, cisternas e telhados, oferecendo proteção completa contra infiltrações e umidade. Utilizamos materiais de alta performance e técnicas modernas, garantindo a segurança estrutural e a longevidade do seu imóvel.</p>
-      <a href="impermizacao.html" class="btn-vermais" target="_blank">VER MAIS</a>
-    </div>
-    <div class="card-servico">
-      <div class="icone">
-        <img src="https://img.icons8.com/?size=100&id=LERfX5TZI0qa&format=png&color=000000" alt="Dreno">
-      </div>
-      <h3>Dreno para ar-condicionado em fachadas</h3>
-      <p>Realizamos a instalação de drenos de ar-condicionado com eficiência e segurança, garantindo o escoamento adequado da água e evitando infiltrações, manchas e danos estruturais.
-      Esse serviço assegura uma fachada protegida, funcional e valorizada, preservando a estética e a durabilidade do seu imóvel.</p>
-      <a href="dreno.html" class="btn-vermais" target="_blank">VER MAIS</a>
-    </div>
-    <div class="card-servico">
-      <div class="icone">
-        <img src="https://img.icons8.com/?size=100&id=w3o_i2Kkg9zG&format=png&color=000000" alt="Limpeza">
-      </div>
-      <h3>Limpeza</h3>
-      <p>Realizamos limpeza de fachadas em ACM, telhados, pele de vidro, pastilhas e revestimentos, além de retirada de trincas, emboço estufado e pintura de acabamento. Utilizamos equipamentos adequados e produtos específicos para cada tipo de superfície, garantindo segurança, agilidade e resultado duradouro.</p>
-      <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="btn-vermais">VER MAIS</a>
-    </div>
-    <div class="card-servico">
-      <div class="icone">
-        <img src="https://img.icons8.com/?size=100&id=gxEMvOe3pGuT&format=png&color=000000" alt="Laudo">
-      </div>
-      <h3>Laudo</h3>
-      <p>Realizamos o teste de percussão com laudo 3D para identificar, com máxima precisão, descolamentos, fissuras e falhas em revestimentos. Esse processo garante segurança, confiabilidade e eficiência em cada AVALIAÇÃO.</p>
-      <a href="laudo.html" class="btn-vermais" target="_blank" rel="noopener noreferrer">VER MAIS</a>
-    </div>
-
-    <div class="card-servico">
-      <div class="icone">
-        <img src="https://img.icons8.com/?size=100&id=5ILoCXjKiXDV&format=png&color=000000" alt="Laudo">
-      </div>
-      <h3>Montagem e Desmontagem de Apara-Lixo</h3>
-      <p>Realizamos serviços de montagem e desmontagem de apara-lixo com segurança, agilidade e eficiência. Contamos com uma equipe técnica qualificada que garante execução precisa e cumprimento de prazos. Nossos serviços asseguram praticidade, organização e durabilidade nas estruturas instaladas.</p>
-      <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="btn-vermais" target="_blank" rel="noopener noreferrer">VER MAIS</a>
-    </div>
-    <div class="card-servico">
-      <div class="icone">
-        <img src="https://img.icons8.com/?size=100&id=922&format=png&color=000000" alt="Laudo">
-      </div>
-      <h3>Rebaixamento de Gesso e Drywall</h3>
-      <p>Realizamos serviços de rebaixamento de gesso e drywall com foco em qualidade, segurança e acabamento impecável. Desenvolvemos projetos de alto padrão para valorizar e modernizar ambientes. Nossa equipe técnica qualificada garante resultados duradouros e um visual sofisticado em cada detalhe.</p>
-      <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" class="btn-vermais" target="_blank" rel="noopener noreferrer">VER MAIS</a>
-    </div>
-  </div>
-</section>
-
-<section class="resultados">
-  <div class="resultado">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEPElEQVR4nO2Z36tVRRTHv5HdrkUmZJr2i35AD/niS/7CF4VIgrSg8G+wH2S9RTCs2fd27+niQ/nkgyCEYT+gCCsooiJSq2v0EGmUKJpWKmaaD/78xsxed985587ennPv3ufuA3dg4JyZNWuvz56116yZAWbKTGmr0GAeLb6nBZuq4Gv0SuFruI2CnyZAaEUvFBrMpeAHffu/0OAOCpZScLlnQDiMWyn4rgniDdxIwc89MyM0mEOLvcG38Kpvt2ho2/7ag7CBW2ixWw29oiBvZi7l6gCW1RqEBjdR8KUaf5iCV9TgDwOXanjZuoJwBDfT4is18CAN7mGCR5tmxrmUQX9tQXQmvlDjDjHBvb5dsDz4TrxLZWPqBsLNmE3B54HBpyg4QcHFljWj0TSuTiA06KPFrrzFjuM1c6nageia8HGLwU/R4iEO4nYmWEGLSxqplk4YXwcQnYmP1Jg/afGb/51ghfb3+0Uw4lK1AeG7uJ4WO9WQv2nxcPZf8LSXEbye51KTBtG316DgeBu+nFf/8YtaqmskhFCjNivIi00Ln0x0qcmDCIanANCadr/FBA/Q4lcaLA6MellltmTph2C40K6OQSyOqeLlbUBvU9mXWnQsoeCM9j3HrbihpX+DGnYhSBL7ywZpe0BmkODTSN8TFFz164NgVVOfYFXLwvdImXZ1DpLu5Fw6cd6F14iuNHsV/MFBLAjGPRiAFLpUV0BUfp+G0tU5EeszNfjbMRejYOBaUWo6QIZ0zFC032C+n5FUZkTT9vPtulT3QBKs1jGjuTLpfuKC/2YsnvEBIAd8+kBc6uHesPtWDOblyiV4Xl3srA/JBrNqBeIKLT7RcRtQUGjxtsLsKJKbTpBNauC2QjmDu1Tur070dw/EYHGnq349QYjraHG0KhAK1gTrzprKQDoyanKuezAA+b2yB9UV5Fi46SmzULByLGXphmsNlZbG59fB6j924zdDQ9nMlFnTVGXQPaNjENE0R7CDBvd3On5cUbfCZk5x22IK/lOY40xwH3oRJNs2CD5QndtRmDelOdHejL6K6nQL9vjkscDNKPjG1aa2AdxZmB14gYKbogqhfqTBoqhNFv9qBL07AnIiPhPjEPspWOf2Daio6J5kPQUH9Jn7YjNDi/e1f5c7H3ZA2SGf4J2JigUvZBAGc6sCyLlqS2ESPBvpd1vik5FZPB2NXMGV1zr9/7iGu6MUrA3kou0RfW2P12NT9+w9UV1u7yJ4T8/KTruZyA2/tDjnlak7NSWAgiOBXLQ9oq/t8Xrt5jdcmGrxu7bpAnGXoKWB2Owicr2CrdXpP8IEjwXA0fbIi2l7fOZaFrunDpIeBri3cqDrH7s7Tk2fvbEMhX0+no/BCJ50vluKtfHnzdGZSCEsRluPVaeifFEG0906ygEsLAUigOlz8VzvvdNIVk09508eBRtLm4mZgvqU/wEzWuou6IMnBgAAAABJRU5ErkJggg==" alt="crane">
-    <h3 class="contador" data-target="500">0</h3>
-    <p>Reformas realizadas</p>
-  </div>
-
-  <div class="resultado">
-    <img src="data:image/png;base64,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" alt="batch-assign">
-    <h3 class="contador" data-target="500">0</h3>
-    <p>Clientes satisfeitos</p>
-  </div>
-
-  <div class="resultado">
-   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADZElEQVR4nO1ZS4xMQRQ9vvEZ4r8TYuKTEMZmIvHdSBBbNiQSwSBhYSM2qu99PWTis0ZEJFgYG7HDgjAh/p8NJkFGwggZnzBioR2p6je0me7p193Vb57PTSrpvK4695yqerdu3Qf8t7/Q2IwBVDCnZZBk4wEMpWAzBdcpeJdPAIl+7j/FNQZooMEQJMFoMIOChz/JCr4XFJD7THCfBtP6mvxkKtq7EYsmINv3FQNM6ivyAym4m4dUdAHq2m3bP34Bgu15CZUugAywJV7yBv2paPMmQNEW6ypQsLwgmfIEkIKlcQo46F2Aoik+ATaW+xdwJT4BNvz5F9AWp4CvVRDQGZuAP9ZYfBYra4Lv/wX8E0ZFMxUP3KwFqC0bJ0BtOPv3KDjtl2VvjhWdNBhMwQsPWM9DrC9+2EVxKvjiLjGKo/a9KBuH7pJziAbD4hbQSsV0pjHPJnYVJYVp1IeXola/LHtzrDjJFDZ6xNtEwSlfeMUdBlhExVMaTKgYqxHjKXhGwWI/7KI6Fuy2K+EB5wQVxg+rUhwbjKLgAw1Glo2xD8OpeE+DMX7ZRSWgOMcU1pU9PoV1FsMvq1IIBFhGwY2yxytuWgy/rEqP448ZYEnJYwULXTiuIAx7MQq2UtFSyoEWJoUtsVcj8pI5jEFuFUo4F8K4/9iORRKMipUuvUijPkLfuRR8tmOQFHO5TDarfEvB/IL9Aiyg4I3ra1CDpJhLiy0xwS0KvlFxxAphE0a4Zn9nn30L+1gRU5EUo2IFBRe5F6OpuNDLreuC6yM4n6wtpDhLxYafESaFNRRcoqIjbJepWNsVqahY36cHWLe9fyzc01MQ0RhgYrgix206gbiNBrOp2BfObteFfEfk8QG25WyrDgr2UzGnuqQVM6kQKh6FF5rGbhWF1zY1LoqzB2OpePlbIUyQpuKJOxsESoNZfkgb1LhvX/YjRJczgzr3X/4vLtdpMK4gXvYFvtq9aodf/upynt9xvssJt2H9f0OPGmhO3aZgjSgbInfZWXTvSPY9sau3061SzzGZIpjt9pSPnDOF5JuLFZ48FrkykTAFpyOJcHlKhMpZ7ALU1aAaigsQ3EisAMXNKCvwMYqAahiLC/gURUAmwQJY9N7xxwmgYjUFZ1yx1lYZ/Ozr6rUsR8v1DAWrfgAFHG0k12zYogAAAABJRU5ErkJggg==" alt="worker-male">
-    <h3 class="contador" data-target="10">0</h3>
-    <p>Anos de experiência</p>
-  </div>
-</section>
-
-<section class="faq">
-  <h2>Perguntas frequentes</h2>
-
-  <div class="faq-container">
-    <div class="faq-item">
-      <button class="faq-question">Quais são as garantias que a empresa fornece?</button>
-      <div class="faq-answer">
-        <p>Para todos os serviços que oferecemos emitimos nota fiscal e, para serviços específicos, também emitimos Termo de Responsabilidade Técnica e Especificação Técnica.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">Quais são os prazos médios para a conclusão de projetos de reforma de fachada?
-      </button>
-      <div class="faq-answer">
-        <p>Os prazos variam, mas geralmente concluímos projetos de reforma de fachadas em  3 a 6 messes.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">Vocês possuem equipe própria de profissionais especializados em trabalhos de fachada?
-    </button>
-    <div class="faq-answer">
-      <p>Sim, contamos com uma equipe própria de profissionais altamente qualificados em trabalhos de fachada. Habilitados para trabalho em altura.</p>
-    </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">Como solicitar um orçamento?</button>
-    <div class="faq-answer">
-      <p>Entre em contato conosco através de uma das formas abaixo, enviando o máximo de informações possíveis. Caso tenha fotos que auxiliem a identificar o tipo de serviço, envie-nos também.Telefone E-mail</p>
-    </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">Vocês atendem residências, prédios e comércios?
-      </button>
-    <div class="faq-answer">
-      <p>Sim! Prestamos serviços para casas, apartamentos, prédios, comércios e condomínios. Conte com a ALE Reformas e Manutenções para garantir qualidade e segurança em cada projeto.</p>
-    </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Vocês seguem todas as normas de segurança e regulamentações em suas reformas?
-    </button>
-    <div class="faq-answer">
-      <p>Sim! Nossa equipe está totalmente familiarizada com regulamentações locais e normas de segurança, garantindo que cada projeto seja executado com eficiência, qualidade e conformidade.</p>
-    </div>
-    </div>
-  </div>
-</section>
-
-<section class="servicos2">
-  <h2>Serviços Realizados</h2>
-  <div class="slider">
-    <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
-    <div class="slides">
-      <img src="assets/images/pintura.png" alt="Serviço 1" class="active">
-      <img src="assets/images/andaime2.png" alt="Serviço 2">
-      <img src="assets/images/andaime.png" alt="Serviço 3">
-      <img src="assets/images/ape-pintura.jpg" alt="Serviço 4">
-      <img src="assets/images/lateral.jpg" alt="lateral">
-      <img src="assets/images/predio-blue.jpg" alt="predio">
-      <img src="assets/images/predio1.jpg" alt="predio">
-      <img src="assets/images/pintura-oring.jpeg" alt="pintura">
-      <img src="assets/images/predio3.jpg" alt="predio">
-      <img src="assets/images/imper-oring.jpeg" alt="img">
-      <img src="assets/images/fachada-oring.jpeg" alt="Fachada">
-    </div>
-    <button class="next" onclick="mudarSlide(1)">&#10095;</button>
-  </div>
-</section>
- </main>
-
- <footer class="footer">
-  <div class="footer-container" id="contato">
-
-    <div class="footer-section">
-      <h3>ALE Reformas & Manutenções</h3>
-      <p>
-        A ALE Reforma & Manutenções® é uma empresa <br> que atua no segmento da Construção.
-      </p>
-    </div>
-
-    <div class="footer-section">
-      <h3>Contato</h3>
-      <p>Rio de Janeiro, Brasil</p>
-      <p>Telefone: +55 (21) 97932-8219</p>
-      <p>Gmail: alemontagemtubular@gmail.com</p>
-      <p>Instagram: alereformasemanutencoes</p>
-    </div>
-
-    <div class="footer-section">
-      <h3>Top Serviços</h3>
-      
-        <p>Reformas</p>
-        <p>Pintura</p>
-        <p>Elétrica</p>
-        <p>Hidráulica</p>
-        <p>Projetos</p>
-        <p>Faz Tudo</p>
-        <p>Limpeza</p>
-      
-    </div>
-
-    <div class="footer-section">
-      <h3>Atendimento</h3>
-      <p>Confira nossos horários de atendimento:</p>
-      <p>Segunda a Sexta: das 8h às 17h</p>
-
-      <div class="footer-section redes-soc">
-      <h3>Nossas redes sociais</h3>
-      <div class="icons">
-        <a href="https://wa.me/5521979328219?text=Ol%C3%A1!+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+Ale+Reformas+e+Manuten%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/logo-whats.png" alt="WhatsApp">
-        </a>
-        <a href="https://www.instagram.com/alereformasemanutecoes?igsh=ZXB5MTczMDVoM3R1" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/logo-insta.png" alt="Instagram">
-        </a>
-        <a href="mailto:alemontagemtubular@gmail.com">
-          <img src="assets/images/logo-gmail.png" alt="E-mail">
-        </a>
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 ALE Reformas & Manutenções. Todos os direitos reservados.</p>
-  </div>
-</footer>
-
-
-
- <script src="script.js"></script>
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-  AOS.init();
-</script> 
- 
-
-</body>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
