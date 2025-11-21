@@ -255,6 +255,7 @@ header {
   align-items: center;
   gap: 10px;
   flex: 1;
+  margin: 0 10px;
   min-width: 220px;
   justify-content: center;
 }
@@ -272,6 +273,7 @@ header {
 .texto-contato h4 {
   font-size: 14px;
   font-weight: 700;
+  
 }
 
 .texto-contato p {
